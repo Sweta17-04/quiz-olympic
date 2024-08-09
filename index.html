@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympics 2024 Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Olympics 2024 Quiz</h2>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question" id="question1">
+                <h3>Question 1: What city is hosting the Olympics 2024?</h3>
+                <label><input type="radio" name="q1" value="a"> Paris</label><br>
+                <label><input type="radio" name="q1" value="b"> Los Angeles</label><br>
+                <label><input type="radio" name="q1" value="c"> Tokyo</label><br>
+                <button type="button" class="next-btn" onclick="showNextQuestion(1, 2)">Next</button>
+            </div>
+            <!-- Question 2 -->
+            <div class="question" id="question2" style="display:none;">
+                <h3>Question 2: Which country won the most gold medals in the 2020 Olympics?</h3>
+                <label><input type="radio" name="q2" value="a"> USA</label><br>
+                <label><input type="radio" name="q2" value="b"> China</label><br>
+                <label><input type="radio" name="q2" value="c"> Japan</label><br>
+                <button type="button" class="next-btn" onclick="showNextQuestion(2, 3)">Next</button>
+            </div>
+            <!-- Question 3 -->
+            <div class="question" id="question3" style="display:none;">
+                <h3>Question 3: In which year were the first modern Olympics held?</h3>
+                <label><input type="radio" name="q3" value="a"> 1896</label><br>
+                <label><input type="radio" name="q3" value="b"> 1900</label><br>
+                <label><input type="radio" name="q3" value="c"> 1924</label><br>
+                <button type="button" class="next-btn" onclick="showNextQuestion(3, 4)">Next</button>
+            </div>
+            <!-- Question 4 -->
+            <div class="question" id="question4" style="display:none;">
+                <h3>Question 4: Which country will host the 2028 Summer Olympics?</h3>
+                <label><input type="radio" name="q4" value="a"> USA</label><br>
+                <label><input type="radio" name="q4" value="b"> France</label><br>
+                <label><input type="radio" name="q4" value="c"> Australia</label><br>
+                <button type="button" class="next-btn" onclick="showNextQuestion(4, 5)">Next</button>
+            </div>
+            <!-- Question 5 -->
+            <div class="question" id="question5" style="display:none;">
+                <h3>Question 5: What is the official motto of the Olympics?</h3>
+                <label><input type="radio" name="q5" value="a"> Faster, Higher, Stronger</label><br>
+                <label><input type="radio" name="q5" value="b"> One World, One Dream</label><br>
+                <label><input type="radio" name="q5" value="c"> United by Emotion</label><br>
+                <button type="submit">Submit Answers</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
